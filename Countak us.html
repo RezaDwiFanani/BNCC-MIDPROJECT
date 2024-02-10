@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BNCC Learning n Training</title>
+    <style>
+        header img {
+            max-width: 200px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .container > div {
+            width: 48%;
+            margin-bottom: 20px; 
+        }
+
+        address,
+        iframe,
+        table {
+            width: 100%;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        table td, table th {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        .mapouter {
+            position: relative;
+            height: 400px;
+            width: 100%;
+            background: #fff;
+            margin-bottom: 20px; 
+        }
+
+        .mapouter .gmap_canvas {
+            overflow: hidden;
+            height: 400px;
+            width: 100%;
+        }
+
+        .mapouter .gmap_canvas iframe {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="BNCC-logo white 1.png" alt="BNCC Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Countak us.html">Contact Us</a></li>
+            <li><a href="user.html">User</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h2>Address</h2>
+            <address>
+               83M5J+8QG, Jl. Araya Mansion No.8 - 22, Genitri, Tirtomoyo, Kec. Pakis, Kabupaten Malang, Jawa Timur 65154
+            </address>
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>info@example.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+123456789</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe src="https://maps.google.com/maps?q=binus%20malang&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

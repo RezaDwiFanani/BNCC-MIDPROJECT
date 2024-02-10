@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BNCC Learning n Training</title>
+    <style>
+        header img {
+            max-width: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <img src="BNCC-logo white 1.png" alt="BNCC Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Countak us.html">Contact Us</a></li>
+            <li><a href="user.html">User</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+    
+        <form>
+            <label for="course">Choose a Course:</label>
+            <select name="course" id="course">
+                <option value="Frout end Course">Frout end Course</option>
+                <option value="Back end Course">Back end Course</option>
+                <option value="ui_ux_design">UI/UX Design</option>
+            </select>
+            <br><br>
+            <label for="instructor">Choose an Instructor:</label>
+            <select name="instructor" id="instructor">
+                <option value="jane_smith">Jane Smith</option>
+                <option value="ahmad">Ahmad</option>
+                <option value="maria">Maria</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="enrollCourse()">Join Now</button>
+        </form>
+    </main>
+
+    <script>
+        function enrollCourse() {
+            var course = document.getElementById("course").value;
+            var instructor = document.getElementById("instructor").value;
+            alert("You have enrolled in " + course + " with " + instructor + " as your instructor.");
+            // Add logic here to handle enrollment process
+        }
+    </script>
+</body>
+</html>
